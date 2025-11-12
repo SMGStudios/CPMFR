@@ -1,0 +1,543 @@
+/* =======================
+   RESET
+======================= */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* =======================
+   TOPBAR
+======================= */
+.topbar {
+    width: 100%;
+    background: linear-gradient(to right, #2072F8, #0042ad);
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    box-sizing: border-box;
+    position: relative;
+    z-index: 2;
+}
+
+.topbar-left {
+    font-weight: bold;
+}
+
+.topbar-right {
+    font-size: 24px;
+    cursor: pointer;
+}
+
+/* =======================
+   BANNER
+======================= */
+.banner {
+    width: 100%;
+    position: relative;
+    z-index: 1;
+}
+
+.banner-image {
+    position: relative;
+    width: 100%;
+}
+
+.banner img {
+    display: block;
+    width: 100%;
+    height: auto;
+    cursor: pointer;
+}
+
+/* Social Buttons – przypięte do obrazka */
+.social-buttons {
+    position: absolute;
+    bottom: 5%;
+    right: 7%;
+    display: flex;
+    gap: 15px;
+    z-index: 2;
+    transform-origin: bottom right;
+}
+
+.social-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    overflow: hidden;
+    background: white;
+    width: 50px;
+    height: 50px;
+    transition: transform 0.2s ease;
+}
+
+.social-btn img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.social-btn:hover {
+    transform: scale(1.1);
+}
+
+/* =======================
+   PRZYCISKI POD BANNEREM
+======================= */
+.banner-buttons {
+    display: flex;
+    width: 100%;
+}
+
+.banner-btn {
+    flex: 1;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: clamp(14px, 2vw, 18px);
+    padding: clamp(12px, 2.5vw, 20px);
+    border: none;
+    transition: background 0.3s ease, transform 0.2s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Lewy – odwrócony gradient */
+.banner-btn.left {
+    background: linear-gradient(to right, #0042ad, #2072F8);
+}
+ 
+/* Prawy – normalny gradient */
+.banner-btn.right {
+    background: linear-gradient(to right, #2072F8, #0042ad);
+}
+
+.banner-btn:hover {
+    transform: scale(1.02);
+    filter: brightness(1.1);
+}
+
+/* =======================
+   MENU ROZWIJANE
+======================= */
+.menu {
+    position: absolute;
+    top: 50px;
+    left: 0;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.95);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+    z-index: 3;
+
+    max-height: 0;
+    overflow: hidden;
+    opacity: 0;
+    transition: max-height 0.4s ease, opacity 0.4s ease;
+    display: flex;
+    flex-direction: column;
+}
+
+.menu.active {
+    max-height: 600px;
+    opacity: 1;
+}
+
+/* Pasek wyszukiwania */
+.menu-header {
+    background: linear-gradient(to right, #2072F8, #0042ad);
+    padding: 10px;
+}
+
+.menu-search {
+    width: 100%;
+    padding: 8px 12px;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+/* Przyciski w menu */
+.menu-buttons {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.menu-buttons button {
+    width: 100%;
+    padding: 15px;
+    border: none;
+    font-size: 16px;
+    text-align: left;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+
+    background: linear-gradient(to right, #2072F8, #0042ad);
+    color: white;
+    font-weight: bold;
+    transition: background 0.3s ease, transform 0.1s ease;
+}
+
+.menu-buttons button:hover {
+    background: linear-gradient(to right, #0042ad, #002b70);
+    transform: scale(1.02);
+}
+
+.menu-buttons .icon {
+    font-size: 18px;
+}
+
+/* =======================
+   SEKCJA POWITALNA
+======================= */
+.welcome-section {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 15px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    width: 100%;
+    box-sizing: border-box;
+    flex-wrap: nowrap;
+}
+
+.welcome-logo {
+    width: clamp(80px, 15vw, 250px);
+    height: auto;
+    flex-shrink: 0;
+}
+
+.welcome-text {
+    font-size: clamp(20px, 3vw, 50px);
+    color: #333;
+    margin: 0;
+    line-height: 1.3;
+    white-space: normal;
+    flex: 1;
+}
+
+.welcome-text strong {
+    font-weight: 700;
+}
+
+/* =======================
+   SEKCJA AKTUALIZACJI
+======================= */
+.updates-section {
+    padding: clamp(15px, 3vw, 40px);
+    background-color: #fff;
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+    font-size: clamp(14px, 1.5vw, 20px);
+    color: #333;
+    line-height: 1.5;
+}
+
+.updates-section p {
+    margin: 0 0 clamp(8px, 1vw, 15px) 0;
+    font-size: clamp(16px, 2vw, 50px);
+}
+
+.updates-section details summary {
+    cursor: pointer;
+    font-weight: bold;
+    margin-bottom: clamp(5px, 1vw, 10px);
+    font-size: clamp(15px, 1.8vw, 30px);
+}
+
+.updates-section ul {
+    margin: clamp(8px, 1.2vw, 15px) 0 0 clamp(15px, 2vw, 25px);
+    padding-left: 0;
+}
+
+.updates-section li {
+    margin-bottom: clamp(5px, 1vw, 10px);
+}
+
+/* =======================
+   SEKCJA NOWOŚCI
+======================= */
+.mods-section {
+    padding: clamp(20px, 4vw, 50px);
+    background-color: #fff;
+    border-top: 1px solid #ddd;
+}
+
+.mods-section h2 {
+    font-size: clamp(18px, 3vw, 32px);
+    margin-bottom: clamp(15px, 3vw, 30px);
+    text-align: center;
+    color: #333;
+}
+
+/* Kontener przewijania */
+.mods-container {
+    display: flex;
+    gap: 20px;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    padding-bottom: 10px;
+}
+
+.mods-container::-webkit-scrollbar {
+    height: 10px;
+}
+
+.mods-container::-webkit-scrollbar-thumb {
+    background: linear-gradient(to right, #2072F8, #0042ad);
+    border-radius: 10px;
+}
+
+.mods-container::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 10px;
+}
+
+/* =======================
+   KARTA MODYFIKACJI – ROZBUDOWANA
+======================= */
+.mod-card {
+    flex: 0 0 clamp(250px, 25vw, 320px);
+    background: #f9f9f9;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 15px;
+    text-align: center;
+    scroll-snap-align: start;
+    transition: transform 0.2s ease;
+}
+
+.mod-card:hover {
+    transform: translateY(-5px);
+}
+
+.mod-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.mod-card h3 {
+    font-size: clamp(16px, 2vw, 22px);
+    margin: 5px 0;
+    color: #2072F8;
+}
+
+.mod-card p {
+    font-size: clamp(13px, 1.5vw, 16px);
+    color: #444;
+    margin: 8px 0 12px 0;
+    flex: 0;
+}
+
+/* Lista szczegółów */
+.mod-details {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 15px 0;
+    text-align: left;
+    width: 100%;
+    font-size: clamp(12px, 1.2vw, 15px);
+    color: #333;
+}
+
+.mod-details li {
+    margin: 3px 0;
+}
+
+/* Przycisk */
+.see-now-btn {
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    background: linear-gradient(to right, #2072F8, #0042ad);
+    padding: 10px 15px;
+    border-radius: 8px;
+    font-weight: bold;
+    transition: transform 0.2s ease, filter 0.2s ease;
+}
+
+.see-now-btn:hover {
+    transform: scale(1.05);
+    filter: brightness(1.1);
+}
+
+.see-now-btn-yellow {
+    display: inline-block;
+    text-decoration: none;
+    color: black;
+    background: linear-gradient(to right, #FFBB00, #b98b00);
+    padding: 10px 15px;
+    border-radius: 8px;
+    font-weight: bold;
+    transition: transform 0.2s ease, filter 0.2s ease;
+}
+
+.see-now-btn-yellow:hover {
+    transform: scale(1.05);
+    filter: brightness(1.1);
+}
+
+/* =======================
+   SEKCJA KATEGORIE
+======================= */
+.categories-section {
+    padding: clamp(20px, 4vw, 50px);
+    background-color: #f9f9f9;
+    border-top: 1px solid #ddd;
+}
+
+.categories-section h2 {
+    font-size: clamp(18px, 3vw, 32px);
+    margin-bottom: clamp(15px, 3vw, 30px);
+    text-align: center;
+    color: #333;
+}
+
+/* Siatka kategorii */
+.categories-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+    gap: 20px;
+}
+
+/* =======================
+   SEKCJA KATEGORIE
+======================= */
+.categories-section {
+    padding: clamp(20px, 4vw, 50px);
+    background-color: #f9f9f9;
+    border-top: 1px solid #ddd;
+}
+
+.categories-section h2 {
+    font-size: clamp(18px, 3vw, 32px);
+    margin-bottom: clamp(15px, 3vw, 30px);
+    text-align: center;
+    color: #333;
+}
+
+/* Siatka kategorii */
+.categories-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    /* domyślnie 3 kolumny */
+    gap: 20px;
+}
+
+/* 2 kolumny na telefonach */
+@media (max-width: 768px) {
+    .categories-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* Karta kategorii */
+.category-card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    text-decoration: none;
+    color: white;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    transition: transform 0.2s ease, filter 0.2s ease;
+    min-height: 180px;
+    /* wysokość karty */
+}
+
+.category-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.3s ease;
+}
+
+.category-card span {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0));
+    padding: 10px;
+    font-size: clamp(14px, 1.8vw, 20px);
+    font-weight: bold;
+    color: white;
+
+    /* Wyśrodkowanie */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.category-card:hover {
+    transform: scale(1.05);
+    filter: brightness(1.1);
+}
+
+/* =======================
+   POMOC
+======================= */
+.help-section {
+    margin: 30px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+}
+
+.help-section h2 {
+    margin-bottom: 15px;
+    color: #0042ad;
+}
+
+/* =======================
+   STOPKA
+======================= */
+.footer {
+  background: linear-gradient(90deg, #2072F8, #0042ad);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem 0;
+  margin-top: 40px;
+  color: #fff;
+  font-family: "Segoe UI", Roboto, sans-serif;
+}
+
+/* =======================
+   RESPONSIVE
+======================= */
+@media (max-width: 768px) {
+    .social-buttons {
+        right: 3%;
+    }
+
+    .social-btn {
+        width: 80px;
+        height: 80px;
+    }
+
+    .welcome-text {
+        font-size: 16px;
+    }
+}
