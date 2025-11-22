@@ -435,7 +435,7 @@ body {
 /* Siatka kategorii */
 .categories-grid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(4, 1fr);
     /* domyślnie 3 kolumny */
     gap: 20px;
 }
@@ -444,6 +444,13 @@ body {
 @media (max-width: 768px) {
     .categories-grid {
         grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* 3 kolumny na tabletach */
+@media (min-width: 769px) and (max-width: 1024px) {
+    .categories-grid {
+        grid-template-columns: repeat(3, 1fr);
     }
 }
 
