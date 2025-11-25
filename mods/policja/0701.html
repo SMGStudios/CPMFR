@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pl">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>CPMFR - Policja/Fiat Doblo - nowy</title>
+        <link rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+        <link rel="stylesheet" href="../../assets/css/mod.css">
+        <link rel="stylesheet" href="../../assets/css/main.css">
+    </head>
+    <body>
+        <!-- Topbar -->
+        <div class="topbar">
+            <div class="topbar-left"><i>CPMFR</i> - Policja / Fiat Doblo II -
+                nowy</div>
+            <div class="topbar-right" id="menu-toggle">&#9776;</div>
+        </div>
+
+        <!-- Menu rozwijane -->
+        <div id="menu" class="menu">
+            <div class="menu-header">
+                <input type="text" placeholder="Aby wyszukać, wpisz i naciśnij Enter" class="menu-search">
+            </div>
+            <div class="menu-buttons">
+                <button><i class="bi bi-question-circle"></i> Jak zamówić modyfikacje?</button>
+                <button><i class="bi bi-question-circle"></i> Jak pobrać modyfikacje?</button>
+                <button><i class="bi bi-question-circle"></i> Jak zainstalować modyfikacje?</button>
+                <button><i class="bi bi-star"></i> Użyteczne narzędzia</button>
+                <button onclick="location.href='mailto:sheriff.michal.studio@gmail.com';"><i class="bi bi-envelope"></i> Kontakt</button>
+            </div>
+        </div>
+
+        <!-- SEKCJA MODYFIKACJI -->
+        <section class="mod-container">
+
+            <!-- Tytuł modyfikacji -->
+            <h1 class="mod-title">Fiat Doblo II - nowy</h1>
+
+            <!-- Zdjęcia -->
+            <div id="sourceImages" style="display:none;">
+                <img src="0701_01.jpg">
+                <img src="0701_02.jpg">
+                <img src="0701_03.jpg">
+                <img src="0701_04.jpg">
+                <img src="0701_05.jpg">
+            </div>
+
+            <!-- Główne zdjęcie -->
+            <div class="mod-main-image">
+                <img id="mainImage">
+            </div>
+
+            <div class="mod-thumbs" id="thumbsContainer"></div>
+
+            <!-- Lista miniaturek -->
+            <div class="mod-thumbs" id="thumbsContainer">
+                <!-- Miniaturki generowane automatycznie przez JS -->
+            </div>
+        </section>
+
+        <!-- OPIS MODYFIKACJI -->
+        <section class="mod-description">
+            <p><b>Fiat Doblo II - nowy</b></p>
+
+            <p class="mod-desc-text">
+                Modyfikacja dodaje najnowsze żółto-niebieskie, odblaskowe
+                oznakowanie dla radiozowu Fiat Doblo. Oklejenie zostało wiernie
+                odwzorowane na podstawie fotografii
+                wykonanych podczas targów Europoltech 2019.
+            </p>
+        </section>
+
+        <!-- SEKCJA INFORMACJE -->
+        <section class="info-section" id="info">
+            <p><b>Informacje</b></p>
+
+            <div class="info-item"><span>Marka:</span> Fiat</div>
+            <div class="info-item"><span>Model:</span> Doblo II</div>
+            <div class="info-item"><span>Kategoria:</span> Policja</div>
+            <div class="info-item"><span>Wydano:</span> ---</div>
+            <div class="info-item"><span>Wersja:</span> 1.0</div>
+            <div class="info-item"><span>Autor:</span> SMGStudios</div>
+        </section>
+
+        <!-- SEKCJA AKTUALIZACJE -->
+        <section class="updates-section">
+            <p><b>Aktualizacje</b></p>
+
+            <details>
+                <summary>---</summary>
+                <ul>
+                    <li>V1.0 - Wydano!</li>
+                </ul>
+            </details>
+        </section>
+
+        <!-- STOPKA -->
+        <footer class="footer">
+            <p><i><b>CPMFR</b></i><b> - mods</b> &copy; 2025</p>
+        </footer>
+
+        <script src="../../assets/scripts/topbar.js"></script>
+        <script src="../../assets/scripts/search.js"></script>
+        <script src="../../assets/scripts/gallery.js"></script>
+    </body>
+</html>

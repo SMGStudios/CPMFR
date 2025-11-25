@@ -1,0 +1,139 @@
+/* --- Ogólny kontener strony --- */
+.mod-container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0 15px; /* odstęp od krawędzi ekranu */
+}
+
+/* --- Tytuł modyfikacji --- */
+.mod-title {
+    text-align: center;
+    font-size: 32px; /* stała wartość w px */
+    margin: 1.5rem 0 1rem 0; /* lekka przerwa nad i pod tytułem */
+    color: #2072F8;
+}
+
+/* --- Główne zdjęcie --- */
+.mod-main-image {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    border-radius: 12px;
+    overflow: hidden;
+    margin-bottom: 0.25rem; /* lekka przerwa pod zdjęciem */
+}
+
+.mod-main-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* --- Miniaturki --- */
+.mod-thumbs {
+    display: flex;
+    gap: 10px;
+    overflow-x: auto;
+    margin-bottom: 2rem;
+}
+
+.thumb {
+    width: 90px;
+    height: 90px;
+    object-fit: cover;
+    border-radius: 5px;
+    cursor: pointer;
+    border: 2px solid transparent;
+    transition: transform 0.2s, border 0.2s;
+}
+
+.thumb:hover,
+.active-thumb {
+    border-color: #2072F8;
+    transform: scale(1.05);
+}
+
+
+/* --- Opis modyfikacji --- */
+.mod-description {
+    padding-left: 10px; /* lekki odstęp od lewej */
+    padding-right: 10px; /* lekki odstęp od prawej */
+    margin-top: 0.25rem; /* minimalna przerwa od zdjęcia */
+    margin-bottom: 2rem;
+}
+
+.mod-description p b {
+    font-size: 22px;       /* nagłówek "Informacje" */
+    color: #2072F8;
+    margin-bottom: 0.75rem;
+    display: block;        /* wymusza blok nad resztą treści */
+}
+
+.mod-desc-title {
+    font-size: 26px;
+    font-weight: 600;
+    color: #2072F8;
+    margin-bottom: 0.5rem;
+}
+
+.mod-desc-text {
+    font-size: 16px; /* stały px */
+    line-height: 1.6;
+    color: #000;
+}
+
+/* --- Informacje --- */
+.info-section {
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-bottom: 2rem;
+}
+
+/* Nagłówek sekcji */
+.info-section p b {
+    font-size: 22px;
+    color: #2072F8;
+    margin-bottom: 0.75rem;
+    display: block;
+}
+
+/* Pojedyncze informacje */
+.info-item {
+    font-size: 16px;
+    color: #000;
+    margin-bottom: 0.5rem;
+    display: block;
+    white-space: normal;
+}
+
+/* Pogrubione etykiety */
+.info-item span {
+    font-weight: 600;
+    color: #000;
+    display: inline;
+}
+
+/* Aktualizacje */
+.updates-section {
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-bottom: 2rem;
+}
+
+.updates-section p b {
+    font-size: 22px; /* stały px */
+    color: #2072F8;
+}
+
+.updates-section details {
+    margin-top: 0.5rem;
+    padding: 0.5rem 1rem;
+    background: #f9f9f9;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.updates-section summary {
+    font-size: 16px; /* stały px */
+    font-weight: 600;
+    cursor: pointer;
+}
