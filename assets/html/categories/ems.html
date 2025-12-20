@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="pl">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>CPMFR - Pogotoie ratunkowe</title>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+        <link rel="stylesheet" href="../../../assets/css/main.css">
+        <link rel="stylesheet" href="../../../assets/css/cards.css">
+        <link rel="stylesheet" href="../../../assets/css/buttons.css">
+    </head>
+    <body>
+        <!-- Topbar -->
+        <div class="topbar">
+            <div class="topbar-left"><i>CPMFR</i> - Pogotowie ratunkowe</div>
+            <div class="topbar-right" id="menu-toggle">&#9776;</div>
+        </div>
+        
+        <!-- Menu rozwijane -->
+        <div id="menu" class="menu">
+            <div class="menu-header">
+                <input type="text" placeholder="Aby wyszukać, wpisz i naciśnij Enter" class="menu-search">
+            </div>
+            <div class="menu-buttons">
+                <button onclick="location.href='../../../assets/html/help/ordering.html'"><i class="bi bi-question-circle"></i> Jak zamówić modyfikacje?</button>
+                <button onclick="location.href='../../../assets/html/help/downloading.html'"><i class="bi bi-question-circle"></i> Jak pobrać modyfikacje?</button>
+                <button onclick="location.href='../../../assets/html/help/installation.html'"><i class="bi bi-question-circle"></i> Jak zainstalować modyfikacje?</button>
+                <button onclick="location.href='../../../assets/html/help/tools.html'"><i class="bi bi-star"></i> Użyteczne narzędzia</button>
+                <button onclick="location.href='mailto:sheriff.michal.studio@gmail.com';"><i class="bi bi-envelope"></i> Kontakt</button>
+            </div>
+        </div>
+
+        <!-- Pasek filtrowania -->
+        <div class="filter-bar">
+            <div class="filter-icon" id="filter-toggle">
+                <i class="bi bi-funnel"></i>
+            </div>
+
+            <div class="filter-options" id="filter-options">
+                <select id="filter-brand">
+                    <option value>Marka</option>
+                </select>
+
+                <select id="filter-model">
+                    <option value>Model</option>
+                </select>
+
+                <select id="filter-body">
+                    <option value>Zabudowa</option>
+                    <option value="Auto-Form">Auto-Form</option>
+                    <option value="AMZ Kutno">AMZ Kutno</option>
+                    <option value="BoCar">BoCar</option>
+                    <option value="WAS">WAS</option>
+                    <option value="Wawrzaszek">Wawrzaszek</option>
+                    <option value="Zeszuta">Zeszuta</option>
+                </select>
+
+                <select id="filter-color">
+                    <option value>Kolor</option>
+                    <option value="biały">biały</option>
+                    <option value="żółty">żółty</option>
+                </select>
+
+                <button id="filter-apply">Filtruj</button>
+                <button id="filter-reset" class="filter-reset">
+                    <i class="bi bi-arrow-clockwise"></i>
+                </button>
+
+            </div>
+        </div>
+
+        <!-- Siatka kart -->
+        <section class="cards-container">
+
+            <p id="no-results"
+                style="display:none; text-align:center; padding:20px; font-size:20px;">
+                Nie znaleziono wyników odpowiadających filtrom.
+            </p>
+
+            <div class="card-custom" data-brand="Mercedes-Benz" data-model="Sprinter" data-body="Auto-Form" data-color="biały" data-url="../../../assets/html/mods/pogotowie-ratunkowe/8007/8007.html">
+                <div class="card-content">
+                    <img src="../../../assets/html/mods/pogotowie-ratunkowe/8007/8007_00.jpg">
+                    <div class="card-info">
+                        <h3>Mercedes-Benz Sprinter II</h3>
+                        <p>
+                            <b>Marka:</b> Mercedes-Benz<br>
+                            <b>Model:</b> Sprinter II<br>
+                            <b>Zabudowa:</b> podstawowe<br>
+                            <b>Kolor:</b> biały<br>
+                            <b>Data wydania:</b> ---<br>
+                            <b>Wersja:</b> V1.0<br>
+                            <b>Autor:</b> SMGStudios
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card-custom" data-brand="Mercedes-Benz" data-model="Sprinter" data-body="WAS" data-color="biały">
+                <div class="card-content">
+                    <img src="https://placehold.co/400x400">
+                    <div class="card-info">
+                        <h3>Mercedes-Benz Sprinter II</h3>
+                        <p>
+                            <b>Marka:</b> Mercedes-Benz<br>
+                            <b>Model:</b> Sprinter II<br>
+                            <b>Zabudowa:</b> WAS<br>
+                            <b>Kolor:</b> biały<br>
+                            <b>Data wydania:</b> (Wkrótce!)<br>
+                            <b>Wersja:</b> V1.0<br>
+                            <b>Autor:</b> SMGStudios
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card-custom" data-brand="Mercedes-Benz" data-model="Sprinter" data-body="WAS" data-color="żółty">
+                <div class="card-content">
+                    <img src="https://placehold.co/400x400">
+                    <div class="card-info">
+                        <h3>Mercedes-Benz Sprinter II</h3>
+                        <p>
+                            <b>Marka:</b> Mercedes-Benz<br>
+                            <b>Model:</b> Sprinter II<br>
+                            <b>Zabudowa:</b> WAS<br>
+                            <b>Kolor:</b> żółty<br>
+                            <b>Data wydania:</b> (Wkrótce!)<br>
+                            <b>Wersja:</b> V1.0<br>
+                            <b>Autor:</b> SMGStudios
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <!-- STOPKA -->
+        <footer class="footer">
+            <p><i><b>CPMFR</b></i><b> - mods</b> &copy; 2025</p>
+        </footer>
+
+        <script src="../../../assets/scripts/topbar.js"></script>
+        <script src="../../../assets/scripts/search.js"></script>
+        <script src="../../../assets/scripts/filters/mod_filter_ems.js"></script>
+        <script src="../../../assets/scripts/mod_open.js"></script>
+    </body>
+</html>

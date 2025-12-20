@@ -1,0 +1,647 @@
+<!DOCTYPE html>
+<html lang="pl">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>CPMFR - Pomoc/Instalacja modyfikacji</title>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+        <link rel="stylesheet" href="../../../assets/css/main.css">
+        <link rel="stylesheet" href="../../../assets/css/help.css">
+        <link rel="stylesheet" href="../../../assets/css/cards.css">
+        <link rel="stylesheet" href="../../../assets/css/buttons.css">
+    </head>
+
+    <body>
+        <!-- Topbar -->
+        <div class="topbar">
+            <div class="topbar-left"><i>CPMFR</i> - Pomoc / Instalacja modyfikacji</div>
+            <div class="topbar-right" id="menu-toggle">&#9776;</div>
+        </div>
+
+        <!-- Menu rozwijane -->
+        <div id="menu" class="menu">
+            <div class="menu-header">
+                <input type="text" placeholder="Aby wyszukać, wpisz i naciśnij Enter" class="menu-search">
+            </div>
+            <div class="menu-buttons">
+                <button onclick="location.href='../../../assets/html/help/ordering.html'"><i class="bi bi-question-circle"></i> Jak zamówić modyfikacje?</button>
+                <button onclick="location.href='../../../assets/html/help/downloading.html'"><i class="bi bi-question-circle"></i> Jak pobrać modyfikacje?</button>
+                <button onclick="location.href='../../../assets/html/help/installation.html'"><i class="bi bi-question-circle"></i> Jak zainstalować modyfikacje?</button>
+                <button onclick="location.href='../../../assets/html/help/tools.html'"><i class="bi bi-star"></i> Użyteczne narzędzia</button>
+                <button onclick="location.href='mailto:sheriff.michal.studio@gmail.com';"><i class="bi bi-envelope"></i> Kontakt</button>
+            </div>
+        </div>
+
+        <!-- Sekcja informacji wstępnej -->
+        <div class="help-container container mt-4">
+
+            <!-- Pobieranie modyfikacji -->
+            <div class="card mb-4">
+                <div class="help-card-header">
+                    <p class="card-title mb-0"><b>Jak działa instalacja modyfikacji?</b></p>
+                </div>
+                <div class="card-body">
+                    <p>
+                        Chcesz zainstalować modyfikację, ale nie wiesz jak? To proste!
+                        Postępuj zgodnie z poniższą instrukcją lub obejrzyj poradnik na
+                        <a href="https://www.youtube.com/@SHERIFFMICHAL" target="_blank">YouTube</a>.
+                    </p>
+                    <p>
+                        Aby zainstalować modyfikcję najpierw musisz ją pobrać na swoje użądzenie.
+                        Jeśli nie wiesz jak pobrać modyfikację zalecamy najpierw zapoznać się z
+                        poprzednim poradnikiem klikając <a href="downloading.html">tutaj</a>.
+                    </p>
+                    <p>
+                        Po pobraniu modyfikacji masz dwa sposoby na jej zainstalowanie poprzez naszą
+                        oficjalną aplikację <b><i>CPMFR</i></b> dedykoaną właśnie do instalacji modyfikacji.
+                        Aplikację pobierzesz klikając <a href="cpmfr_app.html">tutaj</a>.
+                    </p>
+                    <p>
+                        Pobierając i instalując modyfikację, automatycznie stajesz się członkiem naszej społeczności
+                        <i><b>CPMFR!</b></i>
+                    </p>
+                </div>
+            </div>
+
+            <!-- Wymagania -->
+            <div class="card mb-4">
+                <div class="help-card-header">
+                    <p class="card-title mb-0"><b>Wymagania</b></p>
+                </div>
+                <div class="card-body">
+                    <ol class="instruction-list">
+                        <h3>Najnowsza wersja gry:</h3>
+                        <p><b>Car Parking Multiplayer</b> musi być zaktualizowany do najnowszej wersji.</p>
+
+                        <h3>Oryginalna kopia gry:</h3>
+                        <p><b>Car Parking Multiplayer</b> musi być zainstalowany ze <b>Sklepu Play</b>. Wersje z innych źródeł są często zmodyfikowane i nie posiadają oryginalnego szyfrowania plików.</p>
+                        <button onclick="window.open('https://play.google.com/store/apps/details?id=com.olzhas.carparking.multyplayer', '_blank');" class="btn blue-long-btn w-100">
+                            Pobierz
+                        </button>
+                        <br><br>
+
+                        <h3>Aplikacja CPMFR:</h3>
+                        <p>Aplikacja <b><i>CPMFR</i></b> jest konieczna, aby móc zainstalować modyfikacje do plików gry.</p>
+                        <button onclick="window.open('https://www.mediafire.com/file/a8ub2uu81jo2wst/cpmfr.apk/file', '_blank');" class="btn blue-long-btn w-100">
+                            Pobierz
+                        </button>
+                        <br><br>
+
+                        <h3>Aplikacja Shizuku:</h3>
+                        <p>Aplikacja <b>Shizuku</b> jest konieczna, aby aplikacja <b><i>CPMFR</i></b> mogła działać.</p>
+                        <button onclick="window.open('https://play.google.com/store/apps/details?id=moe.shizuku.privileged.api&pcampaignid=web_share', '_blank');" class="btn blue-long-btn w-100">
+                            Pobierz
+                        </button>
+                        <br><br>
+
+                        <h3>Pobrana modyfikacja:</h3>
+                        <p>Aby zainstaloać modyfikację musisz najpierw ją pobrać z naszej <a href="../../../index.html">strony</a>. Jeśli nie wiesz jak pobrać modyfikację zachęcamy do zapoznania się z tym <a
+                                href="downloading.html">poradnikiem</a>.</p>
+
+                        <h3>Włączone opcje programisty:</h3>
+                        <p>Opcje programisty muszą być włączone, aby aktywować port ADB niezbędny do działania instalatora modyfikacji.</p>
+
+                        <h3>Konto gościa:</h3>
+                        <p>Aby zainstalować jakąkolwiek modyfikację musisz najpierw wylogować się ze swojego konta w <b>Car Parking Multiplayer</b>. Instalowanie modów na zalogoanym koncie grozi <b>utratą wszystkich danych</b> i
+                            <b>dezaktywowaniem konta</b>. Modyfikacje instalujesz na <b>własną odpowiedzialność</b>.</p>
+
+                    </ol>
+                </div>
+            </div>
+
+            <!-- Opcje programisty -->
+            <div class="card mb-4" id="developer">
+                <div class="help-card-header">
+                    <p class="card-title mb-0"><b>Opcje programisty</b></p>
+                </div>
+                <div class="card-body">
+                    <ol class="instruction-list">
+                        <li>
+                            Przejdź do aplikacji <b>Ustawienia</b>, następnie przewiń na sam dół i wejdź w <b>Telefon — informacje</b>.
+                            <div class="step-image">
+                                <img src="../../img/help/settings/phone-info.png">
+                            </div>
+                        </li>
+                        <li>
+                            Następnie kliknij w <b>Informacje o oprogramowaniu</b>.
+                            <div class="step-image">
+                                <img src="../../img/help/settings/program-info.png">
+                            </div>
+                        </li>
+                        <li>
+                            Teraz <b>7 krotnie</b> kliknij w <b>Numer wersji</b>.
+                            <div class="step-image">
+                                <img src="../../img/help/settings/version-num.png">
+                            </div>
+                        </li>
+                        <li>
+                            Wyświetli się komunikat. Zatwierdź klikając - <b>OK</b>.
+                            <div class="step-image">
+                                <img src="../../img/help/settings/accept-program.png">
+                            </div>
+                        </li>
+                        <li>
+                            <b>Opcje prograisty</b> zostaną aktywowane. Znajdziesz je na samym dole w <b>ustawieniach</b>. Teraz przejdź do kolejnej części poradnika klikając <a href="#shizuku">tutaj</a>.
+                            <div class="step-image">
+                                <img src="../../img/help/settings/programmer-opt.png">
+                            </div>
+                        </li>
+                    </ol>
+                </div>
+            </div>
+
+            <!-- Konfiguracja Shizuku -->
+            <div class="card mb-4" id="shizuku">
+                <div class="help-card-header">
+                    <p class="card-title mb-0"><b>Konfiguracja Shizuku</b></p>
+                </div>
+                <div class="card-body">
+                    <ol class="instruction-list">
+                        <h3>Shizuku można skonfigurować na 2 sposoby!</h3><br>
+                        <p><b>Pierwszy</b> sposób będzie wymagał stałego połączenia z siecią WI-FI.</p>
+                        <a href="#option1" class="blue-short-btn">Sposób 1</a><br><br>
+                        <p><b>Drugi</b> sposób będzie wymagał komputera i kabla USB.</p>
+                        <a href="#option2" class="blue-short-btn">Sposób 2</a><br><br>
+                    </ol>
+                </div>
+            </div>
+
+            <!-- Sposób 1 - Shizuku -->
+            <div class="card mb-4" id="option1">
+                <div class="help-card-header">
+                    <p class="card-title mb-0"><b>Sposób 1 - (przez WI-FI)</b></p>
+                </div>
+                <div class="card-body">
+                    <ol class="instruction-list">
+                        <li>
+                            Wysuń panel kontekstowy i połącz się ze swoją siecią <b>WI-FI</b>.
+                            <div class="step-image">
+                                <img src="../../img/help/android/wi-fi_off.png">
+                                <img src="../../img/help/android/wi-fi_on.png">
+                            </div>
+                        </li>
+                        <li>
+                            Uruchom aplikację <b>Shizuku</b> i kliknij przycisk <b>Parowanie</b>.
+                            <div class="step-image">
+                                <img src="../../img/help/shizuku/paring.png">
+                            </div>
+                        </li>
+                        <li>
+                            Teraz naciśnij przycisk <b>Opcje developerskie</b>.
+                            <div class="step-image">
+                                <img src="../../img/help/shizuku/developer.png">
+                            </div>
+                        </li>
+                        <li>
+                            Zostaniesz przeniesiony do aplikacji <b>ustawienia</b>. Teraz zjedź do sekcji <b>Debugowanie</b> i kliknij bezpośrednio na zakładkę <b>Debugowanie bezprzewodowe</b>.
+                            <div class="step-image">
+                                <img src="../../img/help/settings/dbg-panel.png">
+                            </div>
+                        </li>
+                        <li>
+                            Teraz aktywuj opcję <b>debugowania bezprzewodowego</b> klikając na suwak.
+                            <div class="step-image">
+                                <img src="../../img/help/settings/wi-fi_dbg-off.png">
+                                <img src="../../img/help/settings/wi-fi_dbg-on.png">
+                            </div>
+                        </li>
+                        <li>
+                            Pojawią się nowe opcje w panelu. Kliknij na opcję <b>Sparuj urządzenie przy pomocy kodu parowania</b>.
+                            <div class="step-image">
+                                <img src="../../img/help/shizuku/paring-code-tag.png">
+                            </div>
+                        </li>
+                        <li>
+                            Wyskoczy nowe okno z wygenerowanym <b>kodem parowania</b>. Przepisz je lub zapamiętaj.
+                            <div class="step-image">
+                                <img src="../../img/help/shizuku/code.png">
+                            </div>
+                        </li>
+                        <li>
+                            Wysuń panel kontekstowy. Będzie widniała tam etykieta <b>Shizuku</b>. Rozwiń jej szczegóły.
+                            <div class="step-image">
+                                <img src="../../img/help/shizuku/properties.png">
+                            </div>
+                            A następnie kliknij <b>Wprowadź kod parowania</b>.
+                            <div class="step-image">
+                                <img src="../../img/help/shizuku/enter-btn.png">
+                            </div>
+                        </li>
+                        <li>
+                            W polu wprowadzania kodów wpisz swój <b>wygenerowany kod</b>, a następnie kliknij <b>Wyślij</b>.
+                            <div class="step-image">
+                                <img src="../../img/help/shizuku/enter-code.png">
+                            </div>
+                        </li>
+                        <li>
+                            Po pomyślnym parowaniu usługi wróć do aplikacji <b>Shizuku</b>. Kliknij <b>Start</b>.
+                            <div class="step-image">
+                                <img src="../../img/help/shizuku/start-shell-wifi.png">
+                            </div>
+                            Uruchomi się okno konsoli. Odczekaj kilka sekund, aż skrypt uruchomi ADB lokalnie. Nie wychodź teraz z aplikacji.
+                            <div class="step-image">
+                                <img src="../../img/help/shizuku/shell-terminal.png">
+                            </div>
+                        </li>
+                        <li>
+                            Kiedy skrypt się wykona cofnij się do karty głównej <b>Shizuku</b>. Zauważysz, że w zakładce będzie widoczna informacja - <b>Shizuku działa</b>.
+                            <div class="step-image">
+                                <img src="../../img/help/shizuku/shizuku-working.png">
+                            </div>
+                            Teraz możesz na spokojnie przejść do kolejnego poradnika klikając <a href="#installation">tutaj</a>.
+                        </li>
+                    </ol>
+                </div>
+            </div>
+            
+            <!-- Sposób 2 - Shizuku -->
+             <div class="card mb-4" id="option2">
+                <div class="help-card-header">
+                    <p class="card-title mb-0"><b>Sposób 2 - (przez komputer)</b></p>
+                </div>
+                <div class="card-body">
+                    <ol class="instruction-list">
+                        <li>
+                            Na swoim komputerze odwiedź oficjalną stronę <a href="https://developer.android.com/tools/releases/" target="_blank">Platform tools</a> i pobierz <b>SDK</b> na <b>Windows</b>.
+                            <div class="step-image">
+                                <img src="../../img/help/windows/adb-download.png">
+                            </div>
+                        </li>
+                        <li>
+                            Pojawi się strona regulaminu. Przewiń ją na sam dół. Następnie zaakceptuj warunki i kliknij <b>Pobierz</b>.
+                            <div class="step-image">
+                                <img src="../../img/help/windows/download-adb-btn.png">
+                            </div>
+                        </li>
+                        <li>
+                            Zostanie pobrane archiwum zip. Otwórz je za pomocą <a href="https://www.winrar.pl/winrar/pobierz" target="_blank">WinRAR</a> lub <a href="https://www.7-zip.org/" target="_blank">7-Zip</a>.
+                            <div class="step-image">
+                                <img src="../../img/help/windows/adb-downloaded.png">
+                            </div>
+                        </li>
+                        <li>
+                            W archiwum znajduje się folder <b>platform-tools</b>. Zaznacz folder i skopiuj lub <b>Ctrl+C</b>.
+                            <div class="step-image">
+                                <img src="../../img/help/windows/platform-tools-folder-cpy.png">
+                            </div>
+                        </li>
+                        <li>
+                            Przejdź do <b>Ten komputer</b> > <b>Urządzenia i dyski</b> > <b>Dysk lokalny (C:)</b>
+                            <div class="step-image">
+                                <img src="../../img/help/windows/local-disk.png">
+                            </div>
+                        </li>
+                        <li>
+                            Na <b>dysku lokalnym (C:)</b> upuść lub wklej <b>Ctrl-V</b> skopiowany folder <b>platform-tools</b> bezpośrednio do katalogu <b>głównego dysku (C:)</b>.
+                            <div class="step-image">
+                                <img src="../../img/help/windows/platform-tools-folder.png">
+                            </div>
+                        </li>
+                        <li>
+                            Zamknij wszystko. Teraz w pasku wyszukiwania <b>Windows</b> wyszukaj <b>Edytuj zmienne środowiskowe</b>.
+                            <div class="step-image">
+                                <img src="../../img/help/windows/edit-variables-panel.png">
+                            </div>
+                        </li>
+                        <li>
+                            W nowym oknie kliknij przycisk <b>Zmienne środowiskowe...</b>
+                            <div class="step-image">
+                                <img src="../../img/help/windows/edit-variables-btn.png">
+                            </div>
+                        </li>
+                        <li>
+                            Zaznacz zmienną <b>Path</b> i kliknij w przycisk <b>Edytuj...</b>
+                            <div class="step-image">
+                                <img src="../../img/help/windows/edit-variables-pth-slc.png">
+                            </div>
+                        </li>
+                        <li>
+                            Kliknij <b>Nowy</b> i utwórz nową zmienną wpisując <br><b>C:\platform-tools</b>. Po wpisaniu zatierdź zmiany i przeklikaj kolejno - <b>OK</b>.
+                            <div class="step-image">
+                                <img src="../../img/help/windows/edit-variables-prc.png">
+                            </div>
+                        </li>
+                        <li>
+                            Teraz pobierz narzędzie <a href="https://www.mediafire.com/file/8ky1to9am971lrl/Shizuku.rar/file" target="_blank">Shizuku launcher</a>. Po przejściu w podany link kliknij w niebieski przycisk pobierania.
+                            <div class="step-image">
+                                <img src="../../img/help/windows/download-shizuku-launcher.png">
+                            </div>
+                        </li>
+                        <li>
+                            Zostanie pobrane archiwum zip. Otwórz je.
+                            <div class="step-image">
+                                <img src="../../img/help/windows/shizuku-arch.png">
+                            </div>
+                        </li>
+                        <li>
+                            Po otwarciu przerzuć plik <b>Shizuku.cmd</b> na swój pulpit lub w inne miejsce na dysku.
+                            <div class="step-image">
+                                <img src="../../img/help/windows/shizuku-file.png">
+                            </div>
+                        </li>
+                        <li>
+                            Uruchom skrypt wykonywalny <b>Shizuku.cmd</b>
+                            <div class="step-image">
+                                <img src="../../img/help/windows/shizuku-message.png">
+                            </div>
+                            Program poprosi Cię, abyś podłączył swój telefon do komputera za pomocą <b>kabla USB</b>.
+                            <div class="step-image">
+                                <img src="../../img/help/windows/terminal-await.png">
+                            </div>
+                        </li>
+                        <li>
+                            Na swoim telefonie przejdź do aplikacji <b>Ustawienia</b>, a nstępnie do <b>Opcje programisty</b>. Upewnij się, że opcje programisty wcześniej aktyowałeś. Jeśli nie przeczytaj <a href="#developer">poradnik</a>.
+                            <div class="step-image">
+                                <img src="../../img/help/settings/programmer-opt.png">
+                            </div>
+                        </li>
+                        <li>
+                            Przejdź do sekcji <b>Debugowanie</b> i włącz <b>Debugowanie USB</b>.
+                            <div class="step-image">
+                                <img src="../../img/help/settings/usb-dbg-off.png">
+                                <img src="../../img/help/settings/usb-dbg-on.png">
+                            </div>
+                        </li>
+                        <li>
+                            Skrypt poprosi Cię o zatwierdzenie klucza RSA.
+                            <div class="step-image">
+                                <img src="../../img/help/windows/terminal-rsa.png">
+                            </div>
+                            Na twoim telefonie wyświetli się okno dialogowe klucza RSA. Kliknij <b>Zezwalaj</b>.
+                            <div class="step-image">
+                                <img src="../../img/help/android/rsa-vlidate.png">
+                            </div>
+                            Program wykona polecenie uruchamiające skrypt dla aplikacji <b>Shizuku</b>. Po wykonaniu skryptu możesz wszystko zamknąć.
+                            <div class="step-image">
+                                <img src="../../img/help/windows/terminal-success-shizuku.png">
+                            </div>
+                        </li>
+                        <li>
+                            Uruchom na swoim telefonie aplikację <b>Shizuku</b>. Zobaczysz, że skrypt aplikacji został automtycznie uruchomiony!
+                            <div class="step-image">
+                                <img src="../../img/help/shizuku/shizuku-working.png">
+                            </div>
+                        </li>
+                        Teraz możesz na spokojnie przejść do kolejnego poradnika klikając <a href="#installation">tutaj</a>.
+                    </ol>
+                </div>
+            </div>
+
+            <!-- Instalacja modyfikacji -->
+            <div class="card mb-4" id="installation">
+                <div class="help-card-header">
+                    <p class="card-title mb-0"><b>Instalacja modyfikacji</b></p>
+                </div>
+                <div class="card-body">
+                    <p>
+                        <ol class="instruction-list">
+
+                            <li>
+                                Na samym początku musisz pobrać interesującą Cię modyfikację. Poradnik pobierania modyfikacji znajdziesz klikając <a href="downloading.html">tutaj</a>.
+                                <div class="step-image">
+                                    <img src="../../img/help/android/download-mod.png">
+                                </div>
+                            </li>
+
+                            <li>Pobraną modyfikację znajdziesz w folderze <b>Downloads</b> jak na poniższym obrazku.</li>
+                            <div class="step-image">
+                                <img src="../../img/help/android/downloaded-file.png">
+                            </div>
+                            <li>Zainstaluj aplikację <b><i>CPMFR</i></b> jeśli jeszcze nie masz jej zainstalowanej klikając <a href="cpmfr_app.html">tutaj</a>.</li>
+                            <div class="step-image">
+                                <img src="../../img/help/app/cpmfr.png">
+                            </div>
+                            <li>Uruchom grę <b>Car Parking Mupliplayer</b> i wyloguj się ze swojego konta. Kliknij na <b>ustawienia</b> w lewym górnym rogu ekranu.</li>
+                            <div class="step-image">
+                                <img src="../../img/help/game/game-opt.png">
+                            </div>
+                            <li>Naciśnij na przycisk <b>SAVE PROGRESS</b>.</li>
+                            <div class="step-image">
+                                <img src="../../img/help/game/save-game.png">
+                            </div>
+                            <li>Następnie kliknij na <b>Sign out</b>, aby wylogować się z konta. <b>*PAMIĘTAJ SWOJE HASŁO!*</b></li>
+                            <div class="step-image">
+                                <img src="../../img/help/game/log-out.png">
+                            </div>
+                            Potem kliknij w czerwony przycisk <b>Sign out</b>, aby się wylogować.
+                            <div class="step-image">
+                                <img src="../../img/help/game/sign-out.png">
+                            </div>
+                            Odczekaj chwilę, twoje dane zostaną zpisane. <b>*NIE OPUSZCZAJ APLIKACJI!*</b>
+                            <div class="step-image">
+                                <img src="../../img/help/game/save-progress.png">
+                            </div>
+                            <li>Na domyślnym koncie gościa kup pojazd, fo którego pobrałeś modyfikację np. Fiat Doblo. Przejdź do <b>Garage</b>.</li>
+                            <div class="step-image">
+                                <img src="../../img/help/game/garage.png">
+                            </div>
+                            Kliknij na <b>NEW CARS</b>
+                            <div class="step-image">
+                                <img src="../../img/help/game/new-cars.png">
+                            </div>
+                            Zakup pojazd, do którego pobrałeś modyfikację np. Fiat Doblo.
+                            <div class="step-image">
+                                <img src="../../img/help/game/buy-car.png">
+                            </div>
+                            Po zakupieniu pojazdu wyjdź z gry i <b>wyłącz aplikację</b>.
+                            <div class="step-image">
+                                <img src="../../img/help/game/turn-off-app.png">
+                            </div>
+                            <li>Uruchom aplikację <b><i>CPMFR</i></b> i kliknij w niebeski przycisk <b>Wybierz modyfikację</b>.</li>
+                            <div class="step-image">
+                                <img src="../../img/help/cpmfr/cpmfr-slct-mod.png">
+                            </div>
+                            <li>Zostanie uruchomiony systemowy menadżer plików. Przejdź do folderu <b>Download</b> lub tego w którym twoja modyfikacja została pobrna.</li>
+                            <div class="step-image">
+                                <img src="../../img/help/android/downloads.png">
+                            </div>
+                            <li>Znajdź swoją pobraną modyfikację z listy plików i kliknij na jej etykietę.</li>
+                            <div class="step-image">
+                                <img src="../../img/help/android/slct-mod-file.png">
+                            </div>
+                            <li>Modyfikacja zostanie wybrana i zostaniesz spowrotem przeniesiony do aplikacji. Teraz kliknij na żółty przycisk <b>Przyznaj uprawnienia</b>.</li>
+                            <div class="step-image">
+                                <img src="../../img/help/cpmfr/access-saf.png">
+                            </div>
+                            <li>Aplikacja <b>Shizuku</b> poprosi cię o przyznanie dostępu do aplikacji <b><i>CPMFR</i></b>. Kliknij w <b>Zawsze zezwalaj</b>.</li>
+                            <div class="step-image">
+                                <img src="../../img/help/cpmfr/access-shizuku.png">
+                            </div>
+                            <li>Aplikacja <b><i>CPMFR</i></b> poprosi cię o przyznanie uprawnień dla pakietu gry <b>Car Parking Multiplayer.</b> Kliknij <b>Nadaj uprawnienia</b>.</li>
+                            <div class="step-image">
+                                <img src="../../img/help/cpmfr/access-game-pkg.png">
+                            </div>
+                            <li>Po nadaniu wymaganych uprawnień możesz zainstalować swoją modyfikację klikając na niebieski przycisk <b>Zainstaluj modyfikację</b>.</li>
+                            <div class="step-image">
+                                <img src="../../img/help/cpmfr/cpmfr-install-mod.png">
+                            </div>
+                            Po zainstalowaniu modyfikacji w oknie konsoli pojawi się następująca informacja. Teraz możesz bezpiecznie opuścić plikację <b><i>CPMFR</i>.</b>
+                            <div class="step-image">
+                                <img src="../../img/help/cpmfr/cpmfr-console-log.png">
+                            </div>
+                            <li>Uruchom <b>Car Parking Multiplayer</b> i ciesz się swoją zainstalowaną modyfikacją!</li>
+                            <div class="step-image">
+                                <img src="../../img/help/game/ready.png">
+                            </div>
+                            Teraz zapewne zapytasz się jak mieć tą modyfikcję na <b>swoim koncie?</b><br><br>
+                            To bardzo dobre pytanie! Dla tego wszystko wyjaśnimy w kolejnym poradniku.
+                            Aby przejśc do kolejnego poradnika kliknij <a href="#modtransform">tutaj</a>.
+                        </ol>
+                    </p>
+                </div>
+            </div>
+
+            <!-- Przenoszenie modyfikacji -->
+            <div class="card mb-4" id="modtransform">
+                <div class="help-card-header">
+                    <p class="card-title mb-0"><b>Przenoszenie modyfikacji</b></p>
+                </div>
+                <div class="card-body">
+                    <ol class="instruction-list">
+                        <h3>Informacja wstępna:</h3>
+                        <p>
+                            Pobrana modyfikacja znajduje się już na domyślnym koncie gościa, jednak chcesz przenieść ją na swoje konto.<br><br>
+
+                            Do wykonania tego zadania potrzebujesz <b>dwóch urządzeń</b> z zainstalowaną grą <b>Car Parking Multiplayer</b> lub <b>emulatora</b> np. <a href="https://www.memuplay.com/" target="_blank">MEmu</a> lub <a href="https://www.bluestacks.com/pl/index.html" target="_blank">Bluestacks</a> na swoim komputerze.<br><br>
+
+                            Na drugim urządzeniu zaloguj się na swoje konto w <b>Car Parking Multiplayer</b>. Następnie sprzedaj zmodyfikowany pojazd na to konto, na którym jesteś zalogowany z konta gościa. Po pomyślnym transferze pojazdu
+                            zapisz zmiany i wyloguj się ze swojego konta.
+                            Na koniec zaloguj się ponownie na swoje konto na głównym urządzeniu i ciesz się modyfikacją!<br><br>
+
+                            Jeśli nie posiadasz drugiego urządzenia, możesz również skorzystać z aplikacji
+                            <a href="https://play.google.com/store/apps/details?id=com.excelliance.multiaccounts&pcampaignid=web_share" target="_blank">Multiple Accounts</a>.
+                        </p>
+
+                        <h3>Wymagania:</h3>
+                        <p>
+                            1. Dwa urządzenia mobilne lub emulator.<br>
+                            2. Zainstalowana modyfikacja na koncie gościa<br>
+                        </p>
+                        
+                        <h3>Instrukcja:</h3>
+                        <li>
+                            Modyfikację masz zainstalowaną już na domyślnym koncie gościa jak w poprzednim poradniku. Teraz na <b>drugim użądzeniu</b> zainstaluj <b>Car Parking Multiplayer</b>. Następnie uruchom grę.
+                            <div class="step-image">
+                                <img src="../../img/help/game/default-game.png">
+                            </div>
+                        </li>
+                        <li>
+                            Po uruchomieniu gry na <b>drugim urządzeniu</b> kliknij na ustawienia w lewym górnym rogu ekranu.
+                            <div class="step-image">
+                                <img src="../../img/help/game/game-opt.png">
+                            </div>
+                        </li>
+                        <li>
+                            Naciśnij na przycisk <b>SAVE PROGRESS</b>.
+                            <div class="step-image">
+                                <img src="../../img/help/game/save-game.png">
+                            </div>
+                        </li>
+                        <li>
+                            Kliknij na opcję <b>SIGN IN</b> i zaloguj się na swoje konto.
+                            <div class="step-image">
+                                <img src="../../img/help/game/sign-in.png">
+                            </div>
+                        </li>
+                        <li>
+                            Po zalogowaniu się na swoje konto kliknij <b>START</b>.
+                            <div class="step-image">
+                                <img src="../../img/help/game/start.png">
+                            </div>
+                        </li>
+                        <li>
+                            Następnie przejdź do zakładki <b>ONLINE GAME</b>.
+                            <div class="step-image">
+                                <img src="../../img/help/game/online.png">
+                                <img src="../../img/help/game/lobby-scrn.png">
+                            </div>
+                        </li>
+                        <li>
+                            Teraz na <b>pierwszym użądzeniu</b> na tym gdzie posiadasz zainstalowaną modyfikację utwórz nową grę przechodząc tak samo przez: <b>START</b> > <b>ONLINE GAME</b> > <b>ONLY FOR FRIENDS</b> i utwórz pokój <b>bez hasła</b>.
+                            <div class="step-image">
+                                <img src="../../img/help/game/spec-slc.png">
+                            </div>
+                        </li>
+                        <li>
+                            Po dołączeniu do pokoju kliknij w <b>menu opcji</b> menu opcji.
+                            <div class="step-image">
+                                <img src="../../img/help/game/game-main-opt.png">
+                            </div>
+                        </li>
+                        <li>
+                            Tutaj zobczysz po lewej stronie swoje <b>ID gracza</b>. Zapamiętaj je lub zapisz na kartce.
+                            <div class="step-image">
+                                <img src="../../img/help/game/game-stats.png">
+                            </div>
+                        </li>
+                        <li>
+                            Teraz na <b>drugim użądzeniu</b> wpisz to <b>ID</b> do pola <b>ENTER ID TO ADD...</b> Po wprowadzeniu kliknij na <b>START</b>, aby dołączyć do utworzonego pokoju.
+                            <div class="step-image">
+                                <img src="../../img/help/game/type-id.png">
+                                <img src="../../img/help/game/game-room.png">
+                            </div>
+                        </li>
+                        <li>
+                            Po dołączeniu do pokouju na <b>pierwszym użądzeniu</b> wejdź do <b>menu opcji</b>.
+                            <div class="step-image">
+                                <img src="../../img/help/game/game-main-opt.png">
+                            </div>
+                        </li>
+                        <li>
+                            Z listy graczy wybierz użytkownika z <b>drugiego urządzenia</b>, czyli na tym na którym jesteś zalogowany na <b>swoje konto</b>.
+                            <div class="step-image">
+                                <img src="../../img/help/game/room-players.png">
+                            </div>
+                        </li>
+                        <li>
+                            Naciśnij na <b>SELL CAR</b>, by sprzedać zmodyfikowany pojazd na swoje <b>prawdziwe konto</b>.
+                            <div class="step-image">
+                                <img src="../../img/help/game/sell-car2.png">
+                            </div>
+                        </li>
+                        <li>
+                            Kliknij w pole <b>ENTER THE CAR PRICE</b>.
+                            <div class="step-image">
+                                <img src="../../img/help/game/enter-price.png">
+                            </div>
+                        </li>
+                        <li>
+                            Wymyśl jakąś małą cenę nie mniejszą niż <b>1,000$</b>. Następnie kliknij <b>CONFIRM</b>.
+                            <div class="step-image">
+                                <img src="../../img/help/game/sell-car-btn.png">
+                            </div>
+                        </li>
+                        <li>
+                            Teraz na <b>pierwszym użądzeniu</b> kliknij na przycisk, który się wyświetlił.
+                            <div class="step-image">
+                                <img src="../../img/help/game/offert2.png">
+                            </div>
+                        </li>
+                        <li>
+                            Wyświetli się panel zakupu pojazdu. Kliknij zielony znacznik, aby potwierdzić zakup.
+                            <div class="step-image">
+                                <img src="../../img/help/game/buy.png">
+                            </div>
+                        </li>
+                        <li>
+                            Po zakupie odczekaj około 10 sekund, aż komunikat zniknie. Następnie możesz opuścić serwer i cieszyć się swoją modyfikacją na <b>swoim oficjalnym koncie!</b>
+                            <div class="step-image">
+                                <img src="../../img/help/game/wait.png">
+                                <img src="../../img/help/game/ready.png">
+                            </div>
+                        </li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+
+        <!-- STOPKA -->
+        <footer class="footer">
+            <p><i><b>CPMFR</b></i><b> - mods</b> &copy; 2025</p>
+        </footer>
+
+        <script src="../../../assets/scripts/topbar.js"></script>
+        <script src="../../../assets/scripts/search.js"></script>
+    </body>
+</html>
