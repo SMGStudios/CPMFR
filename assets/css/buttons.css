@@ -1,0 +1,222 @@
+/* --- CSS RESET --- */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* ---  ZMIENNE --- */
+:root {
+    --bl1: #2072F8;
+    --bl2: #0042ad;
+    --bl3: #0042ad;
+    --bl4: #002b70;
+    --gr1: #4CAF50;
+    --gr2: #388E3C;
+    --or1: #ff9800;
+    --or2: #e68900;
+}
+
+/* Przyciski menu rozwijanego */
+.menu-buttons {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.menu-buttons button {
+    width: 100%;
+    padding: 15px;
+    border: none;
+    font-size: 16px;
+    text-align: left;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+
+    background: linear-gradient(to right, var(--bl1), var(--bl2));
+    color: white;
+    font-weight: bold;
+    transition: background 0.3s ease, transform 0.1s ease;
+}
+
+.menu-buttons button:hover {
+    background: linear-gradient(to right, var(--bl3), var(--bl4));
+    transform: scale(1.02);
+}
+
+.menu-buttons .icon {
+    font-size: 18px;
+}
+
+/* Przyciski banneru */
+.banner-buttons {
+    display: flex;
+    width: 100%;
+}
+
+.banner-btn {
+    flex: 1;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: clamp(14px, 2vw, 18px);
+    padding: clamp(12px, 2.5vw, 20px);
+    border: none;
+    transition: background 0.3s ease, transform 0.2s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.banner-btn.left {
+    background: linear-gradient(to right, var(--bl2), var(--bl1));
+}
+ 
+.banner-btn.right {
+    background: linear-gradient(to right, var(--bl1), var(--bl2));
+}
+
+.banner-btn:hover {
+    transform: scale(1.02);
+    filter: brightness(1.1);
+}
+
+/* Przyciski social media */
+.social-buttons {
+    position: absolute;
+    bottom: 5%;
+    right: 7%;
+    display: flex;
+    gap: 15px;
+    z-index: 2;
+    transform-origin: bottom right;
+}
+
+.social-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    overflow: hidden;
+    background: white;
+    width: 50px;
+    height: 50px;
+    transition: transform 0.2s ease;
+}
+
+.social-btn img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.social-btn:hover {
+    transform: scale(1.1);
+}
+
+@media (max-width: 768px) {
+    .social-buttons {
+        right: 3%;
+    }
+
+    .social-btn {
+        width: 80px;
+        height: 80px;
+    }
+
+    .welcome-text {
+        font-size: 16px;
+    }
+}
+
+/* Niebieski krótki przycisk */
+.blue-short-btn {
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    background: linear-gradient(to right, var(--bl1), var(--bl2));
+    padding: 10px 15px;
+    border-radius: 8px;
+    font-weight: bold;
+    transition: transform 0.2s ease, filter 0.2s ease;
+}
+
+.blue-short-btn:hover {
+    transform: scale(1.05);
+    filter: brightness(1.1);
+}
+
+/* Niebieski długi przycisk */
+.blue-long-btn {
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    background: linear-gradient(to right, var(--bl1), var(--bl2));
+    border: none;
+    padding: 12px 24px;
+    font-size: 16px;
+    border-radius: 6px;
+    font-weight: bold;
+    transition: transform 0.2s ease, filter 0.2s ease;
+}
+
+.blue-long-btn:hover {
+    transform: scale(1.01);
+    filter: brightness(1.1);
+    color: white !important;
+}
+
+/* Zielony długi przycisk */
+.green-long-btn {
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    background: linear-gradient(to right, var(--gr1), var(--gr2));
+    border: none;
+    padding: 12px 24px;
+    font-size: 16px;
+    border-radius: 6px;
+    font-weight: bold;
+    transition: transform 0.2s ease, filter 0.2s ease;
+}
+
+.green-long-btn:hover {
+    transform: scale(1.01);
+    filter: brightness(1.1);
+    color: white !important;
+}
+
+/* Przycisk kopiowania */
+.copy-btn {
+    position: absolute;
+    right: 5px;
+    top: 5px;
+    width: 36px;
+    height: 36px;
+    background-color: var(--or1);
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background 0.2s, transform 0.1s;
+}
+
+.copy-btn:hover {
+    background-color: var(--or2);
+}
+
+.copy-btn:active {
+    transform: scale(0.95);
+}
+
+.copy-icon {
+    font-size: 18px;
+    color: white;
+    font-style: normal;
+}

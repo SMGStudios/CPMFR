@@ -1,0 +1,321 @@
+/* --- Kontener główny --- */
+.mod-container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0 15px 30px 15px;
+}
+
+/* --- Tytuł modyfikacji --- */
+.mod-title {
+    text-align: center;
+    font-size: 32px;
+    margin: 1.5rem 0 1rem 0;
+    color: #2072F8;
+    font-weight: bold;
+}
+
+/* --- Główne zdjęcie --- */
+.mod-main-image {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    border-radius: 12px;
+    overflow: hidden;
+    margin-bottom: 0.25rem;
+}
+
+.mod-main-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* --- Miniaturki --- */
+.mod-thumbs {
+    display: flex;
+    gap: 10px;
+    overflow-x: auto;
+    margin-bottom: 2rem;
+}
+
+.thumb {
+    width: 90px;
+    height: 90px;
+    object-fit: cover;
+    border-radius: 5px;
+    cursor: pointer;
+    border: 2px solid transparent;
+    transition: transform 0.2s, border 0.2s;
+}
+
+.thumb:hover, .active-thumb {
+    border-color: #2072F8;
+    transform: scale(1.05);
+}
+
+/* --- Opis modyfikacji i Informacje --- */
+.mod-card-header {
+    background-color: #f8f9fa;
+    border-bottom: 1px solid rgba(0,0,0,.125);
+    padding: 0.75rem 1.25rem;
+}
+
+.mod-card-header p.card-title b {
+    font-size: 22px;
+    color: #2072F8;
+    font-family: inherit;
+}
+
+/* --- Informacje --- */
+.info-item {
+    font-size: 16px;
+    color: #000;
+    margin-bottom: 0.5rem;
+    display: block;
+    white-space: normal;
+}
+
+.info-item span {
+    font-weight: 600;
+    color: #000;
+    display: inline;
+}
+
+/* --- Sekcja kreator zamówienia --- */
+.form-label.mod-label {
+    color: #2072F8;
+    font-weight: 600;
+}
+
+.form-select.mod-select {
+    border-color: #ced4da;
+    box-shadow: none;
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+    outline: 0;
+}
+
+.form-select.mod-select:focus {
+    border-color: #80bdff;
+    outline: 0;
+    box-shadow: 0 0 0 0.25rem rgba(32, 114, 248, 0.25);
+}
+
+/* --- ID gracza --- */
+#playerID {
+    width: 100%;
+    padding: 8px;
+    border-radius: 6px;
+    display: block;
+    margin-top: 5px;
+    font: lighter;
+    transition: border-color 0.3s ease;
+    border: 1px solid #ccc;
+}
+
+#playerIDInfo.form-text {
+    display: block;
+    margin-top: 4px;
+    font-size: 12px;
+    color: #555;
+    white-space: normal;
+    width: 100% !important;
+}
+
+#playerID.invalid {
+    border: 2px solid #dc3545 !important;
+    box-shadow: 0 0 5px rgba(220, 53, 69, 0.5);
+}
+
+#playerID.valid {
+    border: 2px solid #28a745 !important;
+    box-shadow: 0 0 5px rgba(40, 167, 69, 0.5);
+}
+
+/* --- Numer operacyjny --- */
+.double-input .input-group select, .double-input .input-group input {
+    border-radius: 0; 
+}
+
+.double-input .input-group select {
+    border-top-left-radius: 6px;
+    border-bottom-left-radius: 6px;
+    width: 30%;
+    flex-grow: 0;
+}
+
+.double-input .input-group input {
+    border-top-right-radius: 6px;
+    border-bottom-right-radius: 6px;
+    width: 70%;
+    flex-grow: 1;
+}
+
+/* --- Belki świetlne --- */
+.lightbar-thumbs {
+margin-bottom: 0.5rem; 
+}
+
+.lightbar-thumb {
+    width: 90px;
+    height: 90px;
+    object-fit: cover;
+    border-radius: 5px;
+    cursor: pointer;
+    border: 2px solid #ccc; 
+    transition: border 0.2s;
+    transform: none; 
+}
+
+.lightbar-thumb:hover {
+    border-color: #2072F8;
+    transform: none;
+}
+
+.active-lightbar-thumb {
+    border-color: #28a745 !important;
+    border-width: 2px !important; 
+    transform: none; 
+}
+
+/* --- Generator Sygnałów --- */
+
+.siren-thumbs {
+    margin-bottom: 0.5rem; 
+}
+
+.siren-player-thumb {
+    width: 90px;
+    height: 90px;
+    border-radius: 5px;
+    cursor: pointer;
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0; 
+    border: 2px solid #ccc; 
+    background-color: #f8f9fa;
+    transition: border 0.2s, background-color 0.2s;
+    position: relative;
+}
+
+.siren-player-icon {
+    font-size: 32px;
+    color: #2072F8;
+    transition: color 0.2s;
+}
+
+.siren-player-thumb:hover {
+    border-color: #2072F8;
+    background-color: #e9ecef;
+}
+
+.active-siren-thumb {
+    border-color: #28a745 !important;
+    border-width: 2px !important; 
+    background-color: #d4edda;
+}
+
+/* --- Aktualizacje --- */
+.updates-section details p {
+    margin-top: 0.25rem;
+    margin-bottom: 0;
+}
+
+.updates-section .card-body p b {
+    font-size: 16px;
+    color: #000000;
+    font-weight: bold;
+}
+
+.mod-desc-text {
+    font-size: 16px; /* stały px */
+    line-height: 1.6;
+    color: #000;
+}
+
+/* --- POPUP I OVERLAY --- */
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7); 
+    z-index: 9998;
+    display: none;
+}
+
+.code-popup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: white;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+    z-index: 9999;
+    width: 90%; 
+    max-width: 450px;
+    box-sizing: border-box;
+    display: none;
+    text-align: center;
+    font-family: sans-serif;
+}
+
+.code-popup-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    width: 100%;
+}
+
+/* Pole z kodem */
+#generatedCodeField {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 12px 50px 12px 12px;
+    border: 2px solid #0056b3;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: bold;
+    color: #333;
+    background: #f8f9fa;
+    margin-bottom: 10px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.overlay.active, .code-popup.active {
+    display: block;
+}
+
+/* Tekst pod polem */
+.info-text {
+    font-size: 11px;
+    color: #666;
+    margin-bottom: 12px;
+    display: block;
+}
+
+/* Ikony social media */
+.icon-row {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 5px;
+}
+
+.circle-icon {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+.circle-icon:hover {
+    transform: scale(1.1);
+}

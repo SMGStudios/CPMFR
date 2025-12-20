@@ -1,0 +1,285 @@
+/* --- RESET CSS --- */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* --- TOPBAR --- */
+.topbar {
+    width: 100%;
+    background: linear-gradient(to right, #2072F8, #0042ad);
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    box-sizing: border-box;
+    position: relative;
+    z-index: 2;
+}
+
+.topbar-left {
+    font-weight: bold;
+}
+
+.topbar-right {
+    font-size: 24px;
+    cursor: pointer;
+}
+
+/* --- BANNER --- */
+.banner {
+    width: 100%;
+    position: relative;
+    z-index: 1000;
+}
+
+.banner-image {
+    position: relative;
+    width: 100%;
+}
+
+.banner img {
+    display: block;
+    width: 100%;
+    height: auto;
+    cursor: pointer;
+}
+
+/* --- MENU ROZWIJANE --- */
+.menu {
+    position: absolute;
+    top: 50px;
+    left: 0;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.95);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+    z-index: 1100;
+
+    max-height: 0;
+    overflow: hidden;
+    opacity: 0;
+    transition: max-height 0.4s ease, opacity 0.4s ease;
+    display: flex;
+    flex-direction: column;
+}
+
+.menu.active {
+    max-height: 600px;
+    opacity: 1;
+}
+
+/* Pasek wyszukiwania */
+.menu-header {
+    background: linear-gradient(to right, #2072F8, #0042ad);
+    padding: 10px;
+}
+
+.menu-search {
+    width: 100%;
+    padding: 8px 12px;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+/* --- PASEK FILTROWANIA --- */
+
+.filter-bar {
+    width: 100%;
+    background: #ffffff;
+    padding: 8px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    border-bottom: 2px solid #e0e0e0;
+    position: sticky;
+    top: 60px;
+    z-index: 900;
+    overflow-x: auto;
+    overflow-y: hidden;
+    white-space: nowrap;
+    scrollbar-width: thin;
+}
+
+.filter-bar::-webkit-scrollbar {
+    height: 6px;
+}
+
+.filter-bar::-webkit-scrollbar-thumb {
+    background: #c1c1c1;
+    border-radius: 4px;
+}
+
+.filter-icon {
+    font-size: 24px;
+    cursor: pointer;
+    padding: 4px 10px;
+    border-radius: 10px;
+    background: #f1f1f1;
+    flex: 0 0 auto;
+}
+
+.filter-options {
+    display: none;
+    gap: 12px;
+    white-space: nowrap;
+}
+
+.filter-options.visible {
+    display: flex;
+}
+
+.filter-options select, .filter-options button {
+    padding: 8px 14px;
+    border-radius: 10px;
+    border: 1px solid #c9c9c9;
+    font-size: 16px;
+    flex: 0 0 auto;
+    background: white;
+}
+
+.filter-options button {
+    background: #2072F8;
+    color: white;
+    border: none;
+    font-weight: bold;
+}
+
+/* --- SEKCJA POWITALNA --- */
+.welcome-section {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 15px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    width: 100%;
+    box-sizing: border-box;
+    flex-wrap: nowrap;
+}
+
+.welcome-logo {
+    width: clamp(80px, 15vw, 250px);
+    height: auto;
+    flex-shrink: 0;
+}
+
+.welcome-text {
+    font-size: clamp(20px, 3vw, 50px);
+    color: #333;
+    margin: 0;
+    line-height: 1.3;
+    white-space: normal;
+    flex: 1;
+}
+
+.welcome-text strong {
+    font-weight: 700;
+}
+
+/* --- SEKCJA AKTUALIZACJI --- */
+.updates-section {
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-bottom: 2rem;
+}
+
+.updates-section p b {
+    font-size: 22px;
+    color: #2072F8;
+}
+
+.updates-section details {
+    margin-top: 0.5rem;
+    padding: 0.5rem 1rem;
+    background: #f9f9f9;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.updates-section summary {
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+/* --- SEKCJA NOWOŚCI --- */
+.mods-section {
+    padding: clamp(20px, 4vw, 50px);
+    background-color: #fff;
+    border-top: 1px solid #ddd;
+}
+
+.mods-section h2 {
+    font-size: clamp(18px, 3vw, 32px);
+    margin-bottom: clamp(15px, 3vw, 30px);
+    text-align: center;
+    color: #333;
+}
+
+/* Kontener przewijania */
+.mods-container {
+    display: flex;
+    gap: 20px;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    padding-bottom: 10px;
+}
+
+.mods-container::-webkit-scrollbar {
+    height: 10px;
+}
+
+.mods-container::-webkit-scrollbar-thumb {
+    background: linear-gradient(to right, #2072F8, #0042ad);
+    border-radius: 10px;
+}
+
+.mods-container::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 10px;
+}
+
+/* --- POMOC --- */
+.help-section {
+    margin: 30px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+}
+
+.help-section h2 {
+    margin-bottom: 15px;
+    color: #0042ad;
+}
+
+/* --- STOPKA --- */
+.footer {
+  all: unset;
+  background: linear-gradient(90deg, #2072F8, #0042ad);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem 0;
+  margin-top: 40px;
+  color: #fff;
+  font-family: "Segoe UI", Roboto, sans-serif;
+  width: 100%;
+  line-height: normal;
+  
+}
+
+.footer p {
+    margin: 0;
+    padding: 0;
+    line-height: normal;
+}
+
+.search-highlight {
+    background: yellow;
+    padding: 2px 4px;
+    border-radius: 4px;
+}
