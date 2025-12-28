@@ -51,6 +51,17 @@
                     <option value="Nieoznakowany">Nieoznakowany</option>
                 </select>
 
+                <select id="filter-generation">
+                    <option value>Standard oklejenia</option>
+                    <option value="44S55">1944/1955 (MO)</option>
+                    <option value="55S90">1955/1990 (MILICJA)</option>
+                    <option value="90S2X">1990/2000 (POLICJA)</option>
+                    <option value="2XS07">2000/2007</option>
+                    <option value="07S20">2007/2020</option>
+                    <option value="20S22">2020/2022</option>
+                    <option value="22SXX">2022~</option>
+                </select>
+
                 <button id="filter-apply">Filtruj</button>
                 <button id="filter-reset" class="filter-reset">
                     <i class="bi bi-arrow-clockwise"></i>
@@ -66,77 +77,7 @@
                 Nie znaleziono wyników odpowiadających filtrom.
             </p>
 
-            <div class="card-custom" data-brand="Skoda" data-model="Octavia IV" data-type="Oznakowany" data-url="../../../assets/html/mods/policja/6607/6607.html">
-                <div class="card-content">
-                    <img src="../../../assets/html/mods/policja/6607/6607_00.jpg">
-                    <div class="card-info">
-                        <h3>Škoda Octavia IV</h3>
-                        <p>
-                            <b>Marka:</b> Škoda<br>
-                            <b>Model:</b> Octavia IV<br>
-                            <b>Typ:</b> oznakowany<br>
-                            <b>Data wydania:</b> 20.12.2025<br>
-                            <b>Wersja:</b> V1.0<br>
-                            <b>Autor:</b> SMGStudios
-                        </p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="card-custom" data-brand="Fiat" data-model="Doblo" data-type="Oznakowany" data-url="../../../assets/html/mods/policja/0701/0701.html">
-                <div class="card-content">
-                    <img src="../../../assets/html/mods/policja/0701/0701_00.jpg">
-
-                    <div class="card-info">
-                        <h3>Fiat Doblo II</h3>
-                        <p>
-                            <b>Marka:</b> Fiat<br>
-                            <b>Model:</b> Doblo<br>
-                            <b>Typ:</b> Oznakowany - nowy<br>
-                            <b>Data wydania:</b> 14.12.2025<br>
-                            <b>Wersja:</b> V1.0<br>
-                            <b>Autor:</b> SMGStudios
-                        </p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="card-custom" data-brand="Fiat" data-model="Doblo" data-type="Oznakowany" data-url="../../../assets/html/mods/policja/0702/0702.html">
-                <div class="card-content">
-                    <img src="../../../assets/html/mods/policja/0702/0702_00.jpg">
-
-                    <div class="card-info">
-                        <h3>Fiat Doblo II</h3>
-                        <p>
-                            <b>Marka:</b> Fiat<br>
-                            <b>Model:</b> Doblo<br>
-                            <b>Typ:</b> Oznakowany - (2015)<br>
-                            <b>Data wydania:</b> 17.12.2025<br>
-                            <b>Wersja:</b> V1.0<br>
-                            <b>Autor:</b> SMGStudios
-                        </p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="card-custom" data-brand="KIA" data-model="Stinger GT" data-type="Oznakowany">
-                <div class="card-content">
-                    <img src="https://placehold.co/400x400">
-                    <div class="card-info">
-                        <h3>KIΛ Stinger GT</h3>
-                        <p>
-                            <b>Marka:</b> KIΛ<br>
-                            <b>Model:</b> Stinger GT<br>
-                            <b>Typ:</b> oznakowany<br>
-                            <b>Data wydania:</b> (wkrótce!)<br>
-                            <b>Wersja:</b> V1.0<br>
-                            <b>Autor:</b> SMGStudios
-                        </p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="card-custom" data-brand="BMW" data-model="M3 F10" data-type="Oznakowany">
+            <div class="card-custom" data-brand="BMW" data-model="M3 F10" data-type="Oznakowany" data-generation="07S20">
                 <div class="card-content">
                     <img src="https://placehold.co/400x400">
                     <div class="card-info">
@@ -145,7 +86,172 @@
                             <b>Marka:</b> BMW<br>
                             <b>Model:</b> M3 [F10]<br>
                             <b>Typ:</b> oznakowany<br>
+                            <b>Standard:</b> 2007/2020<br>
                             <b>Data wydania:</b> (wkrótce!)<br>
+                            <b>Wersja:</b> V1.0<br>
+                            <b>Autor:</b> SMGStudios
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card-custom" data-brand="Fiat" data-model="Doblo" data-type="Oznakowany" data-generation="22SXX" data-url="../../../assets/html/mods/policja/0701/0701.html">
+                <div class="card-content">
+                    <img src="../../../assets/html/mods/policja/0701/0701_00.jpg">
+
+                    <div class="card-info">
+                        <h3>Fiat Doblo II</h3>
+                        <p>
+                            <b>Marka:</b> Fiat<br>
+                            <b>Model:</b> Doblo<br>
+                            <b>Typ:</b> Oznakowany<br>
+                            <b>Standard:</b> 2022~<br>
+                            <b>Data wydania:</b> 14.12.2025<br>
+                            <b>Wersja:</b> V1.0<br>
+                            <b>Autor:</b> SMGStudios
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card-custom" data-brand="Fiat" data-model="Doblo" data-type="Oznakowany" data-generation="07S20" data-url="../../../assets/html/mods/policja/0702/0702.html">
+                <div class="card-content">
+                    <img src="../../../assets/html/mods/policja/0702/0702_00.jpg">
+
+                    <div class="card-info">
+                        <h3>Fiat Doblo II</h3>
+                        <p>
+                            <b>Marka:</b> Fiat<br>
+                            <b>Model:</b> Doblo<br>
+                            <b>Typ:</b> Oznakowany<br>
+                            <b>Standard:</b> 2007/2020<br>
+                            <b>Data wydania:</b> 17.12.2025<br>
+                            <b>Wersja:</b> V1.0<br>
+                            <b>Autor:</b> SMGStudios
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card-custom" data-brand="KIA" data-model="Stinger GT" data-type="Oznakowany" data-generation="07S20" data-url="../../../assets/html/mods/policja/0520/0520.html">
+                <div class="card-content">
+                    <img src="../../../assets/html/mods/policja/0520/0520_00.jpg">
+                    <div class="card-info">
+                        <h3>KIΛ Stinger GT</h3>
+                        <p>
+                            <b>Marka:</b> KIΛ<br>
+                            <b>Model:</b> Stinger GT<br>
+                            <b>Typ:</b> oznakowany<br>
+                            <b>Standard:</b> 2007/2020<br>
+                            <b>Data wydania:</b> 28.12.2025<br>
+                            <b>Wersja:</b> V1.0<br>
+                            <b>Autor:</b> SMGStudios
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card-custom" data-brand="KIA" data-model="Stinger GT" data-type="Oznakowany" data-generation="07S20" data-url="../../../assets/html/mods/policja/0530/0530.html">
+                <div class="card-content">
+                    <img src="../../../assets/html/mods/policja/0530/0530_00.jpg">
+                    <div class="card-info">
+                        <h3>KIΛ Stinger GT</h3>
+                        <p>
+                            <b>Marka:</b> KIΛ<br>
+                            <b>Model:</b> Stinger GT<br>
+                            <b>Typ:</b> oznakowany<br>
+                            <b>Standard:</b> 2007/2020<br>
+                            <b>Data wydania:</b> 28.12.2025<br>
+                            <b>Wersja:</b> V1.0<br>
+                            <b>Autor:</b> SMGStudios
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card-custom" data-brand="KIA" data-model="Stinger GT" data-type="Oznakowany" data-generation="07S20" data-url="../../../assets/html/mods/policja/0540/0540.html">
+                <div class="card-content">
+                    <img src="../../../assets/html/mods/policja/0540/0540_00.jpg">
+                    <div class="card-info">
+                        <h3>KIΛ Stinger GT</h3>
+                        <p>
+                            <b>Marka:</b> KIΛ<br>
+                            <b>Model:</b> Stinger GT<br>
+                            <b>Typ:</b> oznakowany<br>
+                            <b>Standard:</b> 2007/2020<br>
+                            <b>Data wydania:</b> 28.12.2025<br>
+                            <b>Wersja:</b> V1.0<br>
+                            <b>Autor:</b> SMGStudios
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card-custom" data-brand="KIA" data-model="Stinger GT" data-type="Oznakowany" data-generation="20S22" data-url="../../../assets/html/mods/policja/0550/0550.html">
+                <div class="card-content">
+                    <img src="../../../assets/html/mods/policja/0550/0550_00.jpg">
+                    <div class="card-info">
+                        <h3>KIΛ Stinger GT</h3>
+                        <p>
+                            <b>Marka:</b> KIΛ<br>
+                            <b>Model:</b> Stinger GT<br>
+                            <b>Typ:</b> oznakowany<br>
+                            <b>Standard:</b> 2020/2022<br>
+                            <b>Data wydania:</b> 28.12.2025<br>
+                            <b>Wersja:</b> V1.0<br>
+                            <b>Autor:</b> SMGStudios
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card-custom" data-brand="KIA" data-model="Stinger GT" data-type="Oznakowany" data-generation="22SXX" data-url="../../../assets/html/mods/policja/0560/0560.html">
+                <div class="card-content">
+                    <img src="../../../assets/html/mods/policja/0560/0560_00.jpg">
+                    <div class="card-info">
+                        <h3>KIΛ Stinger GT</h3>
+                        <p>
+                            <b>Marka:</b> KIΛ<br>
+                            <b>Model:</b> Stinger GT<br>
+                            <b>Typ:</b> oznakowany<br>
+                            <b>Standard:</b> 2022~<br>
+                            <b>Data wydania:</b> 28.12.2025<br>
+                            <b>Wersja:</b> V1.0<br>
+                            <b>Autor:</b> SMGStudios
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card-custom" data-brand="KIA" data-model="Stinger GT" data-type="Nieoznakowany" data-generation="07S20" data-url="../../../assets/html/mods/policja/0570/0570.html">
+                <div class="card-content">
+                    <img src="../../../assets/html/mods/policja/0570/0570_00.jpg">
+                    <div class="card-info">
+                        <h3>KIΛ Stinger GT</h3>
+                        <p>
+                            <b>Marka:</b> KIΛ<br>
+                            <b>Model:</b> Stinger GT<br>
+                            <b>Typ:</b> nieoznakowany<br>
+                            <b>Standard:</b> 2007/2020<br>
+                            <b>Data wydania:</b> 28.12.2025<br>
+                            <b>Wersja:</b> V1.0<br>
+                            <b>Autor:</b> SMGStudios
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card-custom" data-brand="Skoda" data-model="Octavia IV" data-type="Oznakowany" data-generation="20S22" data-url="../../../assets/html/mods/policja/6607/6607.html">
+                <div class="card-content">
+                    <img src="../../../assets/html/mods/policja/6607/6607_00.jpg">
+                    <div class="card-info">
+                        <h3>Škoda Octavia IV</h3>
+                        <p>
+                            <b>Marka:</b> Škoda<br>
+                            <b>Model:</b> Octavia IV<br>
+                            <b>Typ:</b> oznakowany<br>
+                            <b>Standard:</b> 2020/2022<br>
+                            <b>Data wydania:</b> 20.12.2025<br>
                             <b>Wersja:</b> V1.0<br>
                             <b>Autor:</b> SMGStudios
                         </p>
