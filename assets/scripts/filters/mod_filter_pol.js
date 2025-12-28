@@ -14,6 +14,7 @@ const brandModels = {
 const brandSelect = document.getElementById("filter-brand");
 const modelSelect = document.getElementById("filter-model");
 const typeSelect = document.getElementById("filter-type");
+const generationSelect = document.getElementById("filter-generation");
 const filterToggle = document.getElementById("filter-toggle");
 const filterOptions = document.getElementById("filter-options");
 const filterApply = document.getElementById("filter-apply");
@@ -55,12 +56,27 @@ filterToggle.addEventListener("click", () => {
 });
 
 // =============================
+// POKAZYWANIE / UKRYWANIE GENERACJI OKLEJENIA
+// =============================
+function toggleGenerationFilter() {
+    if (typeSelect.value === "Nieoznakowany") {
+        generationSelect.style.display = "none";
+        generationSelect.value = "";
+    } else {
+        generationSelect.style.display = "block";
+    }
+}
+
+typeSelect.addEventListener("change", toggleGenerationFilter);
+
+// =============================
 // FUNKCJA FILTROWANIA
 // =============================
 function applyFilters() {
     const b = brandSelect.value;
     const m = modelSelect.value;
     const t = typeSelect.value;
+    const g = generationSelect.value;
 
     let visibleCount = 0;
 
@@ -68,8 +84,9 @@ function applyFilters() {
         const matchBrand = !b || card.dataset.brand === b;
         const matchModel = !m || card.dataset.model === m;
         const matchType  = !t || card.dataset.type.toLowerCase() === t.toLowerCase();
+        const matchGeneration = !g || card.dataset.generation === g;
 
-        if (matchBrand && matchModel && matchType) {
+        if (matchBrand && matchModel && matchType && matchGeneration) {
             card.style.display = "flex";
             visibleCount++;
         } else {
@@ -92,6 +109,8 @@ filterReset.addEventListener("click", () => {
     brandSelect.value = "";
     modelSelect.innerHTML = '<option value="">Model</option>';
     typeSelect.value = "";
+    generationSelect.value = "";
+    generationSelect.style.display = "block";
 
     cards.forEach(card => {
         card.style.display = "flex";
