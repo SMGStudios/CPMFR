@@ -23,7 +23,7 @@ const lightbarLabels = { "0":"Slicktop","1":"Gamet Prism","2":"Patelite","3":"FS
 const strobLabels = { "0":"Brak","1":"Grill","2":"Zderzak","3":"Grill + zderzak" };
 const strobInternalLabels = { "0":"Brak","1":"FSV – Przednia szyba","2":"FSV – Tylna szyba","3":"FSV – Przednia + tylna szyba" };
 const sirenLabels = { "0":"Whelen Yelp 1","2":"Elektra Mix","3":"Hazard Le-On 1","4":"Hazard Le-On 2","5":"Whelen Yelp 2","6":"Whelen Wail","7":"Whelen PHSR","8":"Patelite Wail" };
-const colorLabels = { "0":"Srebrny","1":"Biały","2":"Czarny","3":"Grafitowy","4":"Granatowy","5":"Stary granatowy","6":"Niebieski","7":"Stary niebieski","8":"Błękitny","9":"Stary błękitny","A":"Khaki","B":"Zielony","C":"Morski" };
+const colorLabels = { "0":"Srebrny","1":"Biały","2":"Siwy","3":"Szary","4":"Grafitowy","5":"Czarny","6":"Czerwony","7":"Niebieski","8":"Nocny błękit" };
 
 // --- FUNKCJE POMOCNICZE ---
 function parseDataList(val) { 
