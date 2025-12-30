@@ -124,99 +124,6 @@
                         data-color_cnt="0,1,3,4,5,6,7,8">
 
                         <!-- Sekcja kreatora zamówienia -->
-                        <div class="card">
-                            <div
-                                class="card-header mod-card-header text-center">
-                                <p class="card-title mb-0"><b>Kreator zamówienia</b></p>
-                            </div>
-
-                            <!-- Informacja wstępna -->
-                            <div class="card-body">
-                                <div>
-                                    <p class="mb-3">
-                                        Skonfiguruj pojazd według własnych preferencji, aby
-                                        wygenerować kod niezbędny do złożenia zamówienia. Kod
-                                        należy wysłać w przeznaczonej do tego sekcji lub
-                                        bezpośrednio do administratora, który zrealizuje zamówienie.
-                                        Więcej informacji znajdziesz <a href="../../../../html/help/ordering.html">tutaj</a>.
-                                    </p>
-                                </div>
-
-                                <!-- Sekcja kart konfiguracyjnych -->
-                                <div class="row g-3">
-                                    <!-- ID gracza -->
-                                    <div class="col-md-6">
-                                        <label for="playerID" class="form-label mod-label">Wprowadź swoje ID gracza:</label>
-                                        <input type="text" id="playerID" maxlength="8" placeholder="AA000000" class="form-control player-id-input">
-                                        <small id="playerIDInfo" class="form-text w-100">Swoje ID gracza znajdziesz w panelu - gra multiplayer w prawym górnym rogu ekranu.</small>
-                                    </div>
-
-                                    <!-- Typ -->
-                                    <div class="col-12">
-                                        <label for="type" class="form-label mod-label">Typ:</label>
-                                        <select id="type" class="form-select mod-select"></select>
-                                    </div>
-
-                                    <!-- Belka świetlna -->
-                                    <div class="col-12">
-                                        <label for="lightbar" class="form-label mod-label">Belka świetlna:</label>
-
-                                        <select id="lightbar" class="form-select mod-select d-none"></select>
-
-                                        <div class="mod-thumbs lightbar-thumbs" id="lightbarThumbsContainer">
-                                        </div>
-
-                                    </div>
-
-                                    <!-- Stroboskopy -->
-                                    <div class="col-12">
-                                        <label for="strob" class="form-label mod-label">Stroboskopy:</label>
-                                        <select id="strob" class="form-select mod-select"></select>
-                                    </div>
-
-                                    <!-- Stroboskopy wewnętrzne -->
-                                    <div class="col-12">
-                                        <label for="strobw" class="form-label mod-label">Stroboskopy wewnętrzne:</label>
-                                        <select id="strobw" class="form-select mod-select"></select>
-                                    </div>
-
-                                    <!-- Generator sygnałów -->
-                                    <div class="col-12">
-                                        <label for="siren" class="form-label mod-label">Generator sygnałów:</label>
-
-                                        <select id="siren" class="form-select mod-select d-none"></select>
-
-                                        <div class="mod-thumbs siren-thumbs" id="sirenThumbsContainer">
-                                        </div>
-                                    </div>
-
-                                    <!-- Naklejki -->
-                                    <div class="col-12">
-                                        <label for="stickers" class="form-label mod-label">Naklejki:</label>
-                                        <select id="stickers" class="form-select mod-select"></select>
-                                    </div>
-
-                                    <!-- Kolor karoserii -->
-                                    <div class="col-12">
-                                        <label for="color" class="form-label mod-label">Kolor:</label>
-                                        <select id="color" class="form-select mod-select"></select>
-                                    </div>
-                                </div>
-
-                                <!-- Informacja zakończeniowa -->
-                                <div class="creator-steps mt-3">
-                                    <p class="mb-3">
-                                        Kiedy będziesz gotowy kliknij wygeneruj kod zamówienia i
-                                        postępuj zgodnie z instrukcją.
-                                    </p>
-                                </div>
-
-                                <!-- Przycisk - Wygeneruj kod -->
-                                <div>
-                                    <button id="generateCode" class="btn green-long-btn w-100">Wygeneruj kod</button>
-                                </div>
-                            </div>
-                        </div>
                     </section>
 
                     <!-- Sekcja pobierania -->
@@ -306,4 +213,5 @@
         <script src="../../../../scripts/siren_selector.js"></script>
         <script src="../../../../scripts/pfx/pol_pfx.js"></script>
     </body>
+
 </html>
